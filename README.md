@@ -18,31 +18,33 @@ Our CLI acts as a real-time bridge connecting four major components:
 4. **The File System (`fs_manager.py`) ➔** Edits, modifies, or appends the text directly onto the local `.tex` files.
 5. **The Compiler (`compiler.py` + `latexmk`) ➔** Compiles the document to a PDF. If it crashes, it grabs the error log, passes it back to DeepSeek, and fixes the code automatically. 🤯
 
----📁 Project Structure
+---
+
+## Project Structure 
+
 ai-latex-cli/
 │
-├── .github/
-│   └── workflows/
-│       └── main-ci.yml                # CI/CD pipeline
+├── .github/workflows/
+│   └── main-ci.yml              # CI/CD pipeline
 │
 ├── docs/
-│   ├── ARCHITECTURE.md                # System design documentation
-│   ├── COMMAND_REFERENCE.md           # CLI command reference
+│   ├── ARCHITECTURE.md          # System design
+│   ├── COMMAND_REFERENCE.md     # CLI commands
 │   └── README.md
 │
 ├── src/
 │   │
 │   ├── api/
-│   │   ├── deepseek.py                # DeepSeek API integration
+│   │   ├── deepseek.py          # DeepSeek API integration
 │   │   └── README.md
 │   │
 │   ├── cli/
-│   │   ├── main.py                    # Click command definitions
+│   │   ├── main.py              # Click command definitions
 │   │   └── README.md
 │   │
 │   ├── core/
-│   │   ├── fs_manager.py              # File and directory operations
-│   │   ├── compiler.py                # LaTeX compilation wrapper
+│   │   ├── fs_manager.py        # File operations
+│   │   ├── compiler.py          # latexmk wrapper
 │   │   └── README.md
 │   │
 │   ├── __init__.py
@@ -55,14 +57,16 @@ ai-latex-cli/
 │   ├── clinical_protocol.tex
 │   └── README.md
 │
-├── .env.example                       # Environment variable template
-├── .env                               # Local secrets (ignored by Git)
+├── .env.example                 # Environment template
+├── .env                         # Local secrets
 ├── .gitignore
 ├── CONTRIBUTING.md
 ├── FUTURE_SCOPE.md
-├── README.md                          # Main project documentation
+├── README.md                    # Main project documentation
 ├── requirements.txt
-└── setup.py                           # Package installation entry point
+└── setup.py                     # Package installation entry point
+
+## 🛠️ Quick Installation & Setup Guide
 
 Before jumping in, make sure you have Python 3.10+ and a local LaTeX distribution installed. 
 
