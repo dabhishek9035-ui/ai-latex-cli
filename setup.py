@@ -43,15 +43,15 @@ setup(
     # ── Package Identity ──────────────────────────────────────────────────────
     name="ai-latex-cli",
     version="0.1.0",
-    author="Nimish Sharma",
-    author_email="nimish.sharma@example.com",
+    author="Your Name / Your Organization",
+    author_email="your.email@example.com",
     description=(
         "A terminal-native AI document engine for biomedical and healthcare "
         "LaTeX document generation, powered by DeepSeek LLM."
     ),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Nimish-Sharma-dev/ai-latex-cli",
+    url="https://github.com/your-org/ai-latex-cli",
     license="MIT",
 
     # ── Package Discovery ─────────────────────────────────────────────────────
@@ -101,8 +101,8 @@ setup(
 
     # ── Project URLs ──────────────────────────────────────────────────────────
     project_urls={
-        "Documentation": "https://github.com/Nimish-Sharma-dev/ai-latex-cli/tree/main/docs",
-        "Bug Tracker": "https://github.com/Nimish-Sharma-dev/ai-latex-cli/issues",
-        "Source": "https://github.com/Nimish-Sharma-dev/ai-latex-cli",
+        "Documentation": "https://github.com/your-org/ai-latex-cli/tree/main/docs",
+        "Bug Tracker": "https://github.com/your-org/ai-latex-cli/issues",
+        "Source": "https://github.com/your-org/ai-latex-cli",
     },
 )
