@@ -14,12 +14,15 @@ The primary target audience is:
 
 The tool helps students convert rough markdown/text notes into properly structured VTU-compliant LaTeX projects.
 
+The goal is to let students focus on content while the system handles formatting, structure, and LaTeX generation automatically.
+
 Instead of manually formatting reports in Word or learning complicated LaTeX syntax, students can:
 
 * provide metadata
 * provide markdown content
 * optionally use AI enhancement
 * automatically generate a complete `.tex` project
+* compiles the .tex to pdf
 
 The generated project can then be:
 
