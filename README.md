@@ -53,7 +53,7 @@ ai-latex-cli/
 │   ├── standard_article.tex
 │   ├── ieee_paper.tex
 │   ├── presentation.tex
-│   ├── clinical_protocol.tex
+│   ├── clinical_protocal.tex
 │   └── README.md
 │
 ├── .env.example

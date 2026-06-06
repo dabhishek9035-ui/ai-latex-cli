@@ -22,7 +22,6 @@ Instead of manually formatting reports in Word or learning complicated LaTeX syn
 * provide markdown content
 * optionally use AI enhancement
 * automatically generate a complete `.tex` project
-* compiles the `.tex` to pdf
 
 The generated project can then be:
 
@@ -222,21 +221,23 @@ We will later add our own customization layer on top of Pandoc.
 ## User Flow
 
 ```text
-latex-ai (vtu-cli)
+vtu-cli
    ↓
-User Input (Interactive menu / prompt)
+Interactive Menu
    ↓
-CLI Core (Click / Typer) — captures command and flags
+Collect Student Metadata
    ↓
-LLM Engine (DeepSeek) — optional AI processing for rewriting/enhancement
+Ask for Markdown File Path
    ↓
-Pandoc — Markdown → LaTeX conversion
+Read Markdown
    ↓
-VTU Template (Jinja2) — apply VTU-specific formatting and pages
+(Optional AI Processing)
    ↓
-File System (`fs_manager.py`) — write project files and assets
+Markdown → LaTeX Conversion
    ↓
-Compiler (`compiler.py` + `latexmk`) — compile to PDF (returns logs on errors)
+Apply VTU Template
+   ↓
+Generate .tex Project
 ```
 
 ---
