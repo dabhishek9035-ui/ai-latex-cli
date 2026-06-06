@@ -78,7 +78,7 @@ Because the compilation happens locally on your machine, you need the actual too
 ### 2. Fork, Clone, and Setup Environment
 ```bash
 # Clone your fork of the repo
-git clone https://github.com/Nimish-Sharma-dev/ai-latex-cli.git
+git clone https://github.com/YOUR-USERNAME/ai-latex-cli.git
 cd ai-latex-cli
 
 # Fire up a virtual environment so dependencies don't clash globally
