@@ -25,7 +25,8 @@ ai-latex-cli/
 │
 ├── .github/
 │   └── workflows/
-│       └── main-ci.yml
+│       ├── main-ci.yml
+│       └── README.md
 │
 ├── docs/
 │   ├── ARCHITECTURE.md
@@ -48,7 +49,12 @@ ai-latex-cli/
 │   │
 │   ├── __init__.py
 │   └── README.md
-│
+├──tests/
+│   ├──test_cli.py
+│   ├──test_compiler.py
+│   ├──test_deepseek.py
+│   └──test_fs_manager.py
+│  
 ├── templates/
 │   ├── standard_article.tex
 │   ├── ieee_paper.tex
@@ -61,6 +67,7 @@ ai-latex-cli/
 ├── CONTRIBUTING.md
 ├── FUTURE_SCOPE.md
 ├── README.md
+├── PROJECT_VISION_AND_ROADMAP.md
 ├── requirements.txt
 └── setup.py
 ```
