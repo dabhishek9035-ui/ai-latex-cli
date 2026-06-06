@@ -18,7 +18,52 @@ Our CLI acts as a real-time bridge connecting four major components:
 4. **The File System (`fs_manager.py`) ➔** Edits, modifies, or appends the text directly onto the local `.tex` files.
 5. **The Compiler (`compiler.py` + `latexmk`) ➔** Compiles the document to a PDF. If it crashes, it grabs the error log, passes it back to DeepSeek, and fixes the code automatically. 🤯
 
----
+## 📁 Project Structure
+
+```text
+ai-latex-cli/
+│
+├── .github/
+│   └── workflows/
+│       └── main-ci.yml
+│
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── COMMAND_REFERENCE.md
+│   └── README.md
+│
+├── src/
+│   ├── api/
+│   │   ├── deepseek.py
+│   │   └── README.md
+│   │
+│   ├── cli/
+│   │   ├── main.py
+│   │   └── README.md
+│   │
+│   ├── core/
+│   │   ├── fs_manager.py
+│   │   ├── compiler.py
+│   │   └── README.md
+│   │
+│   ├── __init__.py
+│   └── README.md
+│
+├── templates/
+│   ├── standard_article.tex
+│   ├── ieee_paper.tex
+│   ├── presentation.tex
+│   ├── clinical_protocal.tex
+│   └── README.md
+│
+├── .env.example
+├── .gitignore
+├── CONTRIBUTING.md
+├── FUTURE_SCOPE.md
+├── README.md
+├── requirements.txt
+└── setup.py
+```
 
 ## 🛠️ Quick Installation & Setup Guide
 
@@ -33,12 +78,12 @@ Because the compilation happens locally on your machine, you need the actual too
 ### 2. Fork, Clone, and Setup Environment
 ```bash
 # Clone your fork of the repo
-git clone [https://github.com/Nimish-Sharma-dev/ai-latex-cli.git)
+git clone https://github.com/YOUR-USERNAME/ai-latex-cli.git
 cd ai-latex-cli
 
 # Fire up a virtual environment so dependencies don't clash globally
 python -m venv venv
-venv\Scripts\activate   # On Linux or macOS use: source venv/bin/activate 
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
 # Install the dependencies + dev tools
 pip install -r requirements.txt
