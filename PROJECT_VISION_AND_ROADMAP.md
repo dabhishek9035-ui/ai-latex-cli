@@ -22,7 +22,7 @@ Instead of manually formatting reports in Word or learning complicated LaTeX syn
 * provide markdown content
 * optionally use AI enhancement
 * automatically generate a complete `.tex` project
-* compiles the .tex to pdf
+* compiles the `.tex` to pdf
 
 The generated project can then be:
 
