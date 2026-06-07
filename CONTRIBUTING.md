@@ -31,7 +31,7 @@ let other contributors know if you face any challenges
 ### 1. Fork and Clone
 
 ```bash
-git clone https://github.com/Nimish-Sharma-dev/ai-latex-cli.git
+git clone https://github.com/Your-Username/ai-latex-cli.git
 cd ai-latex-cli
 ```
 
@@ -121,7 +121,7 @@ Every PR must:
 **PR descriptions should answer:**
 - What problem does this solve?
 - Are there any known limitations or edge cases that are causing troubles?
-- anything else that is imp to
+- anything else that is imp too.
 
 ---
 
@@ -129,7 +129,7 @@ Every PR must:
 ### Language & Version
 
 - Python 3.10+ required
-- All new code must be compatible with Python 3.10, 3.11, and 3.12
+- All new code must be compatible with Python 3.11, and 3.12
 
 ### Type Hints
 
@@ -240,7 +240,6 @@ Use the **Conventional Commits** format:
 | `refactor` | Code change without behavior change |
 | `test` | Adding or fixing tests |
 | `chore` | Build process, dependency updates |
-
 
 ---
 

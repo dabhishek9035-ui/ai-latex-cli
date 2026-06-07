@@ -50,7 +50,7 @@ All configuration is loaded from a `.env` file (never hardcoded):
 
 ### Getting Your API Key
 
-1. Visit [https://platform.deepseek.com](https://platform.deepseek.com)
+1. Visit [https://platform.deepseek.com]
 2. Create an account and navigate to API Keys
 3. Generate a key and paste it into your `.env` file:
    ```env
